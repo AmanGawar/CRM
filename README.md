@@ -1,49 +1,57 @@
 # CRM
+📌 CRM Hub
+
+
+
+
+
+
+CRM Hub is a powerful Customer Relationship Management solution that helps businesses manage customer data, run targeted marketing campaigns, and leverage AI insights — all in one platform.
+
 🎯 Overview
-CRM Hub is a comprehensive customer relationship management solution that empowers businesses to:
+CRM Hub enables you to:
 
 📊 Manage customer data efficiently
-🎯 Create targeted customer segments
+
+🎯 Segment customers for targeted campaigns
+
 📧 Run multi-channel marketing campaigns
-🤖 Get AI-powered customer insights
-📈 Track campaign performance
+
+🤖 Gain AI-powered customer insights
+
+📈 Track campaign performance in real-time
+
 ✨ Features
 🔐 Authentication & Authorization
+
 👥 Customer Management
+
 🎯 Segmentation Engine
+
 📢 Campaign Management
-🤖 AI-Powered Features
-🛠️ Tech Stack
-Frontend
-{
-  "framework": "React 18 + TypeScript",
-  "styling": "TailwindCSS",
-  "routing": "React Router DOM",
-  "state": "React Context",
-  "animations": "Framer Motion",
-  "forms": "React Hook Form",
-  "icons": "Lucide React"
-}
-Backend
-{
-  "runtime": "Node.js",
-  "framework": "Express.js",
-  "database": "MongoDB + Mongoose",
-  "authentication": "JWT + Google Auth",
-  "validation": "Joi",
-  "logging": "Morgan"
-}
-AI Integration
-{
-  "provider": "Google Gemini API",
-  "features": [
-    "Performance Analysis",
-    "Content Optimization",
-    "Smart Scheduling",
-    "Audience Insights"
-  ]
-}
+
+🤖 AI-Powered Insights
+
+🛠 Tech Stack
+Frontend: React 18 + TypeScript, TailwindCSS, React Router DOM, React Context, Framer Motion, React Hook Form, Lucide React
+Backend: Node.js, Express.js, MongoDB + Mongoose, JWT + Google Auth, Joi Validation, Morgan Logging
+AI: Google Gemini API for Performance Analysis, Content Optimization, Smart Scheduling, Audience Insights
+
+📸 Screenshots
+(Replace placeholders with real screenshots)
+
+Dashboard
+
+Customer Management
+
+🌐 Live Demo
+🚀 View Live App
+📹 Watch Demo Video
+
 📂 Project Structure
+csharp
+Copy
+Edit
 crm-hub/
 ├── client/                 # React frontend
 │   ├── src/
@@ -61,84 +69,43 @@ crm-hub/
     ├── routes/          # API routes
     └── validation/      # Request schemas
 🚀 Installation
-Clone the repository
-
+bash
+Copy
+Edit
+# Clone the repository
 git clone https://github.com/deeptimaan-k/CMS.git
 cd CMS
-Install dependencies
 
-# Install root dependencies
+# Install dependencies
 npm install
-
-# Install client dependencies
 cd client && npm install
-
-# Install server dependencies
 cd ../server && npm install
-Configure environment
-
-# Copy example env files
+Environment Setup
+bash
+Copy
+Edit
 cp .env.example .env
 cd client && cp .env.example .env
 cd ../server && cp .env.example .env
-Start development servers
-
-# From root directory
+Run the app
+bash
+Copy
+Edit
 npm run dev
-🔑 Environment Variables
-Client
-VITE_API_URL=http://localhost:5001/api
-VITE_GOOGLE_CLIENT_ID=your_google_client_id
-Server
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-PORT=5001
-NODE_ENV=development
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-GEMINI_API_KEY=your_gemini_api_key
 📡 API Reference
-Authentication
+(See full API docs in the repository)
+
 Method	Endpoint	Description
 POST	/api/auth/login	User login
 POST	/api/auth/register	User registration
 POST	/api/auth/google	Google OAuth
-GET	/api/auth/profile	Get profile
-PUT	/api/auth/profile	Update profile
-Customers
-Method	Endpoint	Description
 GET	/api/customers	List customers
-POST	/api/customers	Create customer
-GET	/api/customers/:id	Get customer
-PUT	/api/customers/:id	Update customer
-DELETE	/api/customers/:id	Delete customer
-Campaigns
-Method	Endpoint	Description
-GET	/api/campaigns	List campaigns
 POST	/api/campaigns	Create campaign
-GET	/api/campaigns/:id	Get campaign
-POST	/api/campaigns/:id/send	Send campaign
-Segments
-Method	Endpoint	Description
 GET	/api/segments	List segments
-POST	/api/segments	Create segment
-GET	/api/segments/:id	Get segment
-PUT	/api/segments/:id	Update segment
-DELETE	/api/segments/:id	Delete segment
-POST	/api/segments/preview	Preview audience
+
 🤔 Technical Decisions
-Why MongoDB?
-Flexible schema for varying customer data
-Faster development iteration
-Better handling of nested data structures
-Excellent Node.js integration
-Why Client-Side Rendering?
-Rich interactive features
-Smooth user experience
-Reduced server load
-Better state management
-Authentication Strategy
-Real Google OAuth implementation
-JWT for secure sessions
-Role-based access control
-Scalable user management
+MongoDB: Flexible schema for customer data
+
+Client-Side Rendering: Smooth, interactive UI
+
+Auth: Google OAuth + JWT with role-based access
