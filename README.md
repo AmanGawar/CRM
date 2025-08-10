@@ -257,7 +257,9 @@ GEMINI_API_KEY=your_gemini_api_key
 
   [![GitHub](https://img.shields.io/badge/GitHub-deeptimaan--k-181717?style=flat-square&logo=github)](https://github.com/deeptimaan-k)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Deeptimaan%20K-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/deeptimaan-k/)
-</div
+</div>
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
